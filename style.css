@@ -11,7 +11,10 @@ body {
 	width : 750px;
 	
 }
-	
+
+#resultat {
+	display: none;
+}	
 
 .inputCalc {
 	margin: 2px;
