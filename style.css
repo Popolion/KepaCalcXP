@@ -12,7 +12,19 @@ body {
 
 #resultat {
 	display: none;
-}	
+	float: left;
+	margin-top: 22px;
+	margin-left: 0px;
+	height: 150px;
+}
+
+#resultatE {
+	display: none;
+	float: left;
+	margin-top: -30px;
+	margin-left: -200px;
+	height: 150px;
+}
 
 .inputCalc {
 	margin: 2px;
@@ -41,13 +53,6 @@ body {
 #bloque3 {
 	float:left;
 	margin-top:20px;
-}
-
-#resultat {
-	float:left;
-	margin-top:22px;
-	margin-left:0px;
-	height : 150px;
 }
 
 table
