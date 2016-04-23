@@ -1,0 +1,50 @@
+.inputCalc {
+	margin: 2px;
+}
+
+#info {
+	float:left;
+}
+
+#cartes {
+	float:left;
+}
+
+#bloque1 {
+	float:left;
+	margin-left:10px;
+}
+
+#bloque2 {
+	float:left;
+	margin-top:20px;
+}
+
+#bloque3 {
+	float:left;
+	margin-top:20px;
+}
+
+#resultat {
+	float:left;
+	margin-top:20px;
+	margin-left:10px;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+td, th 
+{
+    border: 1px solid black;
+	text-align: center;
+}
+
+
+/* Firefox */
+input[type=number] {-moz-appearance: textfield; width:143;}
+
+/* Google Chrome */
+::-webkit-inner-spin-button { -webkit-appearance: none;}
+::-webkit-outer-spin-button { -webkit-appearance: none;}
