@@ -1,6 +1,15 @@
 <html>
+
 	<head>
+	    <title>KepaCardXP</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- MATERIALIZE -->
+		<!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+		<!-- Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+		  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- MATERIALIZE -->
 		<script language=javascript type="text/javascript">
 			function LoadFile() {
 				if(!window.sessionStorage) {
@@ -414,6 +423,23 @@
 	</head>
 	
 	<body>
+	
+	<!-- MENU -->
+	 <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">KepaCardXP</a><a href="https://github.com/Popolion/KepaCalcXP">par speedaxter</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li class="active"><a href="#">Popolion</a></li>
+        <li><a href="https://popolion.fr">Site</a></li>
+        <li><a href="https://forum.popolion.fr">Forum</a></li>
+		<li><a href="https://wiki.popolion.fr">Wiki</a></li>
+		<li><a href="https://twitter.com/popolionfr">Twitter</a></li>
+      </ul>
+    </div>
+  </nav>
+    <!-- FIN MENU -->    
+	
+		<div id="contenu">
 		<iframe id="frmFile" src="table_exp.txt" onload="LoadFile();" style="display: none;"></iframe>
 		<iframe id="frmFile2" src="table_exp_classe.txt" onload="LoadFile2();" style="display: none;"></iframe>
 		
@@ -434,7 +460,7 @@
 			<div class="inputCalc">
 				<input placeholder="Rank de classe" id="rank" name="rank" title="1-7" required="required" pattern="([1-7])" />
 			</div>
-			Niveau a atteindre :
+			Niveau &agrave; atteindre :
 			<div class="inputCalc">
 				<input placeholder="Niveau voulut" id="estimate" name="estimate" title="1-279" pattern="([2][0-7][0-9]|[1][0-9][0-9]|([1-9][0-9])|[1-9])" />
 			</div>
@@ -456,7 +482,7 @@
 					<input placeholder="Carte d'exp Lv4" name="c4" type="number" />
 				</div>
 				<div class="inputCalc">
-					<input value="Valider" type="button" onClick="calculate();calculateC();estimate();"></input>
+					<input class="btn waves-effect waves-light" value="Valider" type="button" onClick="calculate();calculateC();estimate();"></input>
 				</div>
 			</div>
 			<div id="bloque2">
@@ -489,14 +515,22 @@
 			</div>
 			
 		</form>
+		
 		<div id="resultat">
+		<div class="card-panel teal">
+          <span class="white-text">
 			<div id="resultatChara">
 			</div>
 			<div id="resultatClass">
 			</div>
+			</span>
+			</div>
 			<div id="resultatEstimate">
 			</div>
+			
+	</div>
 		</div>
+
 	</body>
 
 </html>
