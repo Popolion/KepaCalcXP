@@ -5,11 +5,9 @@ body {
 }
 
 #contenu {
-	
 	margin: 0px auto;
 	margin-top : 20px;
 	width : 750px;
-	
 }
 
 #resultat {
@@ -21,6 +19,7 @@ body {
 }
 
 #info {
+	margin-top: -2px;
 	float:left;
 }
 
@@ -46,7 +45,7 @@ body {
 
 #resultat {
 	float:left;
-	margin-top:120px;
+	margin-top:22px;
 	margin-left:0px;
 	height : 150px;
 }

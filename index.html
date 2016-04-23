@@ -169,14 +169,7 @@
 							var c12 = difference / 1344829
 							c12 = Math.ceil(c12)
 						}
-						document.getElementById("resultatEstimate").innerHTML = "<br/><table><tr><th>Cartes</th><th>Necessaire</th></tr>"
-																			 + "<tr><td>Carte 1 : </td><td>" + c1 + "</td></tr><tr><td>Carte 2 : </td><td>" + c2
-																			 + "</td></tr><tr><td>Carte 3 : </td><td>" + c3 + "</td></tr><tr><td>Carte 4 : </td><td>" + c4
-																			 + "</td></tr><tr><td>Carte 5 : </td><td>" + c5 + "</td></tr><tr><td>Carte 6 : </td><td>" + c6
-																			 + "</td></tr><tr><td>Carte 7 : </td><td>" + c7 + "</td></tr><tr><td>Carte 8 : </td><td>" + c8
-																			 + "</td></tr><tr><td>Carte 9 : </td><td>" + c9 + "</td></tr><tr><td>Carte 10 : </td><td>" + c10
-																			 + "</td></tr><tr><td>Carte 11 : </td><td>" + c11 + "</td></tr><tr><td>Carte 12 : </td><td>" + c12
-																			 + " </td></tr></table>"
+						document.getElementById("resultatEstimate").innerHTML = "Pour acc&eacute;der au niveau&nbsp;" +lvlEstimate+", vous aurez besoin de :<br/>"+c1+ "&nbsp;cartes niveau 1, "+c2+"&nbsp; cartes niveau 2, "+c3+ "&nbsp;cartes niveau 3, "+c4+ "&nbsp;cartes niveau 4, "+c5+ "&nbsp;cartes niveau 5, "+c6+ "&nbsp;cartes niveau 6, "+c7+"&nbsp;cartes niveau 7, "+c8+ "&nbsp;cartes niveau 8, "+c9+ "&nbsp;cartes niveau 9, "+c10+ "&nbsp;cartes niveau 10, "+c11+ "&nbsp;cartes niveau 11 et "+c12+ "&nbsp;cartes niveau 12."
 					} else {
 						
 					}
@@ -429,13 +422,14 @@
 	<!-- MENU -->
 	 <nav>
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo center">KepaCardXP</a><a href="https://github.com/Popolion/KepaCalcXP">par speedaxter</a>
+      <a href="#" class="brand-logo center">KepaCardXP</a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
         <li class="active"><a href="#">Popolion</a></li>
         <li><a href="https://popolion.fr">Site</a></li>
         <li><a href="https://forum.popolion.fr">Forum</a></li>
 		<li><a href="https://wiki.popolion.fr">Wiki</a></li>
 		<li><a href="https://twitter.com/popolionfr">Twitter</a></li>
+		<li class="active"><a href="https://github.com/Popolion/KepaCalcXP">par speedaxter</a></li>
       </ul>
     </div>
   </nav>
@@ -527,7 +521,11 @@
 			</div>
 			</span>
 			</div>
+			<div class="card-panel orange darken-2">
+          <span class="white-text">
 			<div id="resultatEstimate">
+			</span>
+			</div>
 			</div>
 			
 	</div>
