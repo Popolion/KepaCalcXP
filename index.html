@@ -224,7 +224,7 @@
 						obj = document.getElementById("resultatE");
 						obj.style.display = "inline";
 						if(sessionStorage.getItem("langue") == "english") {
-							document.getElementById("resultatEstimate").innerHTML = "Pour acc&eacute;der au niveau&nbsp;" +lvlEstimate+", vous aurez besoin de :<br/>"+c1+ "&nbsp;cartes niveau 1, "+c2+"&nbsp; cartes niveau 2, "+c3+ "&nbsp;cartes niveau 3, "+c4+ "&nbsp;cartes niveau 4, "+c5+ "&nbsp;cartes niveau 5, "+c6+ "&nbsp;cartes niveau 6, "+c7+"&nbsp;cartes niveau 7, "+c8+ "&nbsp;cartes niveau 8, "+c9+ "&nbsp;cartes niveau 9, "+c10+ "&nbsp;cartes niveau 10, "+c11+ "&nbsp;cartes niveau 11 et "+c12+ "&nbsp;cartes niveau 12."
+							document.getElementById("resultatEstimate").innerHTML = "To reach the lvl&nbsp;" +lvlEstimate+", you will need :<br/>"+c1+ "&nbsp;card lvl 1, "+c2+"&nbsp; card lvl 2, "+c3+ "&nbsp;card lvl 3, "+c4+ "&nbsp;card lvl 4, "+c5+ "&nbsp;card lvl 5, "+c6+ "&nbsp;card lvl 6, "+c7+"&nbsp;cards 7, "+c8+ "&nbsp;card lvl 8, "+c9+ "&nbsp;card lvl 9, "+c10+ "&nbsp;card lvl 10, "+c11+ "&nbsp;card lvl 11 et "+c12+ "&nbsp;card lvl 12."
 						}
 						else {
 							document.getElementById("resultatEstimate").innerHTML = "Pour acc&eacute;der au niveau&nbsp;" +lvlEstimate+", vous aurez besoin de :<br/>"+c1+ "&nbsp;cartes niveau 1, "+c2+"&nbsp; cartes niveau 2, "+c3+ "&nbsp;cartes niveau 3, "+c4+ "&nbsp;cartes niveau 4, "+c5+ "&nbsp;cartes niveau 5, "+c6+ "&nbsp;cartes niveau 6, "+c7+"&nbsp;cartes niveau 7, "+c8+ "&nbsp;cartes niveau 8, "+c9+ "&nbsp;cartes niveau 9, "+c10+ "&nbsp;cartes niveau 10, "+c11+ "&nbsp;cartes niveau 11 et "+c12+ "&nbsp;cartes niveau 12."
@@ -348,10 +348,10 @@
 					
 					//Affiche le resultat
 					if(sessionStorage.getItem("langue") == "english") {
-						document.getElementById("resultatChara").innerHTML = "Niveau depart : " + level +"\nNiveau obtenu : " + j + "\nExp Actu : " + expPlus + "/" + maxExp + "\nPourcent : " + pourcent;
+						document.getElementById("resultatChara").innerHTML = "Start lvl : " + level +"\n<i class=\"material-icons tiny\">trending_flat</i>&nbsp;Obtained lvl : " + j + "\n<br/>Exp : " + expPlus + "/" + maxExp + "\nPercent : <i class=\"material-icons tiny\">trending_flat</i>&nbsp;" + pourcent +"&#37;";
 					}
 					else {
-						document.getElementById("resultatChara").innerHTML = "Niveau depart : " + level +"\nNiveau obtenu : " + j + "\nExp Actu : " + expPlus + "/" + maxExp + "\nPourcent : " + pourcent;
+						document.getElementById("resultatChara").innerHTML = "Niveau d&#233;part : " + level +"\n<i class=\"material-icons tiny\">trending_flat</i>&nbsp;Niveau obtenu : " + j + "\n<br/>Exp Actu : " + expPlus + "/" + maxExp + "\nPourcent : <i class=\"material-icons tiny\">trending_flat</i>&nbsp;" + pourcent +"&#37;";
 					}
 					
 				} else {
@@ -483,16 +483,16 @@
 					obj.style.display = "inline";
 					
 					if(sessionStorage.getItem("langue") == "english") {
-						document.getElementById("resultatClass").innerHTML = "Classe : " + levelC + " -> " + lvlClasse 
-																		+ "    Rank : " + rank + " -> " + rankObtenu 
-																		+ "    Exp Actu : " + expPlus + " / " + maxExp 
-																		+ "    Pourcent : " + pourcent
+						document.getElementById("resultatClass").innerHTML = "Class : " + levelC + " <i class=\"material-icons tiny\">trending_flat</i>&nbsp;Obtained class :&nbsp;" + lvlClasse 
+																		+ "    <br/>Rank : " + rank + " <i class=\"material-icons tiny\">trending_flat</i>&nbsp;Obtained rank :&nbsp;" + rankObtenu 
+																		+ "    <br/>Exp  : " + expPlus + " / " + maxExp 
+																		+ "<i class=\"material-icons tiny\">trending_flat</i>&nbsp;Percent : " + pourcent +"&#37;"
 					}
 					else {
-						document.getElementById("resultatClass").innerHTML = "Classe : " + levelC + " -> " + lvlClasse 
-																		+ "    Rank : " + rank + " -> " + rankObtenu 
-																		+ "    Exp Actu : " + expPlus + " / " + maxExp 
-																		+ "    Pourcent : " + pourcent
+						document.getElementById("resultatClass").innerHTML = "Classe : " + levelC + "<i class=\"material-icons tiny\">trending_flat</i>&nbsp;Classe obtenue :&nbsp;" + lvlClasse 
+																		+ "    <br/>Rank : " + rank + "<i class=\"material-icons tiny\">trending_flat</i>&nbsp;Rank obtenu :&nbsp;" + rankObtenu 
+																		+ "    <br/>Exp Actu : " + expPlus + " / " + maxExp 
+																		+ "<i class=\"material-icons tiny\">trending_flat</i>&nbsp;Pourcent : " + pourcent+"&#37;"
 					}
 				 }
 			}
@@ -514,12 +514,13 @@
 		<li class="active"><a href="https://github.com/Popolion/KepaCalcXP"><span id="createur">par speedaxter</span></a></li>
       </ul>
 	  <ul id="nav-mobile" class="right hide-on-med-and-down">
-		<li><a onclick="translateFr()"><img src="fr.png" /></a></li>
-		<li><a onclick="translateUs()"><img src="us.png" /></a></li>
+		<li class="active"><a onclick="translateFr()"><img src="fr.png" /></a></li>
+		<li class="active"><a onclick="translateUs()"><img src="us.png" /></a></li>
       </ul>
     </div>
   </nav>
-    <!-- FIN MENU -->    
+    <!-- FIN MENU -->   
+        	
 	
 		<div id="contenu">
 			<iframe id="frmFile" src="table_exp.txt" onload="LoadFile();" style="display: none;"></iframe>

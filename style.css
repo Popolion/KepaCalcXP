@@ -13,17 +13,35 @@ body {
 #resultat {
 	display: none;
 	float: left;
+	text-align: left;
 	margin-top: 22px;
 	margin-left: 0px;
 	height: 150px;
+	width : 750px;
 }
 
 #resultatE {
 	display: none;
 	float: left;
-	margin-top: -30px;
-	margin-left: -200px;
+	text-align: left;
+	margin-top: 5px;
+	margin-left: 0px;
 	height: 150px;
+	width : 750px;
+}
+
+img {
+	
+margin-top : 15px;	
+padding-bottom : 15px;
+	
+	
+}
+
+#resultatClass {
+	
+	text-align: left;
+	
 }
 
 .inputCalc {
