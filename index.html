@@ -221,14 +221,56 @@
 							c12 = Math.ceil(c12)
 						}
 						
+						var j = 0
+						var differenceLvl = lvlBut - expCard
+						
 						obj = document.getElementById("resultatE");
 						obj.style.display = "inline";
-						if(sessionStorage.getItem("langue") == "english") {
-							document.getElementById("resultatEstimate").innerHTML = "To reach the lvl&nbsp;" +lvlEstimate+", you will need :<br/>"+c1+ "&nbsp;card lvl 1, "+c2+"&nbsp; card lvl 2, "+c3+ "&nbsp;card lvl 3, "+c4+ "&nbsp;card lvl 4, "+c5+ "&nbsp;card lvl 5, "+c6+ "&nbsp;card lvl 6, "+c7+"&nbsp;cards 7, "+c8+ "&nbsp;card lvl 8, "+c9+ "&nbsp;card lvl 9, "+c10+ "&nbsp;card lvl 10, "+c11+ "&nbsp;card lvl 11 et "+c12+ "&nbsp;card lvl 12."
+						
+						if(difference < differenceLvl) {
+							// Cherche le niveau obtenu
+							for (var i = 1; i < 280; i++) {
+								if(differenceLvl < sessionStorage.getItem(t.concat(i))) {
+									j = i
+									i = 280
+								}
+							}
+							
+							var expJ = sessionStorage.getItem(t.concat(j)) - sessionStorage.getItem(j)
+							var expPourcent = differenceLvl - expJ
+							var pourcent = expPourcent / sessionStorage.getItem(j)
+							pourcent = pourcent *100
+							pourcent = pourcent.toFixed(2)
+							
+							if(sessionStorage.getItem("langue") == "english") {
+								// tableau : Carte Lv1 / c1 / c1*500
+								//			 Carte Lv2 / c2 / c2*2686 ...
+								if(expCard > 0) {
+									document.getElementById("resultatEstimate").innerHTML = "You need the level " +j+ " and " +pourcent+ "% or : <br />"
+								}
+								document.getElementById("resultatEstimate").innerHTML += "To reach the lvl&nbsp;" +lvlEstimate+", you will need :<br/>"+c1+ "&nbsp;card lvl 1, "+c2+"&nbsp; card lvl 2, "+c3+ "&nbsp;card lvl 3, "+c4+ "&nbsp;card lvl 4, "+c5+ "&nbsp;card lvl 5, "+c6+ "&nbsp;card lvl 6, "+c7+"&nbsp;cards 7, "+c8+ "&nbsp;card lvl 8, "+c9+ "&nbsp;card lvl 9, "+c10+ "&nbsp;card lvl 10, "+c11+ "&nbsp;card lvl 11 et "+c12+ "&nbsp;card lvl 12."
+							}
+							else {
+								if(expCard > 0) {
+									document.getElementById("resultatEstimate").innerHTML = "Il te faudra atteindre le niveau " +j+ " &agrave; "+expPourcent+ ", " +pourcent+ "% ou alors : <br />"
+								}
+								document.getElementById("resultatEstimate").innerHTML += "Pour acc&eacute;der au niveau&nbsp;" +lvlEstimate+", vous aurez besoin de :<br/>"+c1+ "&nbsp;cartes niveau 1, "+c2+"&nbsp; cartes niveau 2, "+c3+ "&nbsp;cartes niveau 3, "+c4+ "&nbsp;cartes niveau 4, "+c5+ "&nbsp;cartes niveau 5, "+c6+ "&nbsp;cartes niveau 6, "+c7+"&nbsp;cartes niveau 7, "+c8+ "&nbsp;cartes niveau 8, "+c9+ "&nbsp;cartes niveau 9, "+c10+ "&nbsp;cartes niveau 10, "+c11+ "&nbsp;cartes niveau 11 et "+c12+ "&nbsp;cartes niveau 12."
+							}
+							
+						} else {
+							j = level
+							
+							if(sessionStorage.getItem("langue") == "english") {
+								document.getElementById("resultatEstimate").innerHTML = "Congratulations ! You can use all your cards for obtains your level target !"
+							}
+							else {
+								document.getElementById("resultatEstimate").innerHTML = "Bravo ! Tu peux utiliser toutes tes cartes pour atteindre ton objectif de niveau !"
+							}
 						}
-						else {
-							document.getElementById("resultatEstimate").innerHTML = "Pour acc&eacute;der au niveau&nbsp;" +lvlEstimate+", vous aurez besoin de :<br/>"+c1+ "&nbsp;cartes niveau 1, "+c2+"&nbsp; cartes niveau 2, "+c3+ "&nbsp;cartes niveau 3, "+c4+ "&nbsp;cartes niveau 4, "+c5+ "&nbsp;cartes niveau 5, "+c6+ "&nbsp;cartes niveau 6, "+c7+"&nbsp;cartes niveau 7, "+c8+ "&nbsp;cartes niveau 8, "+c9+ "&nbsp;cartes niveau 9, "+c10+ "&nbsp;cartes niveau 10, "+c11+ "&nbsp;cartes niveau 11 et "+c12+ "&nbsp;cartes niveau 12."
-						}
+						
+						document.getElementById("resultatEstimate").innerHTML += "<br/>debug : " + lvlBut + "<" + differenceLvl + ", " + expCard + ", " + j + ", " + expPourcent + ", " + pourcent
+						
+						
 						
 					} else {
 						
