@@ -36,11 +36,11 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">KepaCalcXP</a>
+			<a class="navbar-brand text-center center-block" href="#">KepaCalcXP</a>
 		</div>
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-			<button type="button" class="btn btn-default navbar-btn"><a onclick="translateFr()"><img src="img/fr.png" /></a></button>
+			&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-default navbar-btn"><a onclick="translateFr()"><img src="img/fr.png" /></a></button>
 			<button type="button" class="btn btn-default navbar-btn"><a onclick="translateUs()"><img src="img/us.png" /></a></button>
 				<li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Réseau Popolion<span class="caret"></span></a>
@@ -57,9 +57,7 @@
 			</ul>
 			</div>
 	</nav>
-
     <!-- FIN MENU -->   
-        	
 	
 	<div class="container">
 		<div class="row">
@@ -71,14 +69,15 @@
 				</div>
 				<br/>
 				<form id="info" class="form-inline" action="post">
+				<center>
 					<div class="form-group">
 						<div class="form-group">
-					&nbsp;<img src="img/bullet.png" class="bullet"><div class="input-group" style="width: 110px;"> <span class="input-group-addon">Lvl</span>
+					<div class="input-group" style="width: 135px;"> <span class="input-group-addon">Lvl</span>
 							<input type="number" id="level" class="form-control" placeholder="1-279" name="level" title="1-279" required="required" pattern="([2][0-7][0-9]|[1][0-9][0-9]|([1-9][0-9])|[1-9])">
 						</div>
 						</div>
 					<div class="form-group">
-						<div class="input-group" style="width: 110px;"> <span class="input-group-addon">%</span>
+						<div class="input-group" style="width: 135px;"> <span class="input-group-addon">%</span>
 							<input type="number" id="level_p" class="form-control" placeholder="10.3" title="0-100" required="required" pattern="(^(100|0|(?:\.0{1,2})?))|(?!^0*$)(?!^0*\.0*$)^\d{1,2}(\.\d{1,2})?$" /> 
 
 						</div>
@@ -86,12 +85,12 @@
 					</div>
 					<div class="form-group">
 						<div class="form-group">
-					&nbsp;<img src="img/bullet.png" class="bullet"><div class="input-group" style="width: 110px;"> <span class="input-group-addon">Classe</span>
+					<div class="input-group" style="width: 135px;"> <span class="input-group-addon">Classe</span>
 							<input type="number" id="levelC" class="form-control" placeholder="1-15" name="levelC" title="1-14" required="required" pattern="(([1][0-4])|[1-9])">
 						</div>
 						</div>
 					<div class="form-group">
-						<div class="input-group" style="width: 110px;"> <span class="input-group-addon">%</span>
+						<div class="input-group" style="width: 135px;"> <span class="input-group-addon">%</span>
 							<input type="number" id="levelC_p" class="form-control" placeholder="10.3" name="levelC_p" title="0-100" required="required" pattern="(^(100|0|(?:\.0{1,2})?))|(?!^0*$)(?!^0*\.0*$)^\d{1,2}(\.\d{1,2})?$" /> 
 
 						</div>
@@ -99,78 +98,78 @@
 					</div>
 					<div class="form-group">
 						<div class="form-group">
-					&nbsp;<img src="img/bullet.png" class="bullet"><div class="input-group" style="width: 220px;"><span class="input-group-addon">Rank</span>
+					<div class="input-group" style="width: 275px;"><span class="input-group-addon">Rank</span>
 							<input type="number" id="rank" class="form-control" placeholder="1-7" name="rank" title="1-7" required="required" pattern="([1-7])">
 						</div>
 						</div>
 						<br/>
 					<div class="form-group">
-						&nbsp;<img src="img/bullet.png" class="bullet"><div class="input-group" style="width: 220px;"><span class="input-group-addon">Niveau voulu</span>
-							<input type="number" id="estimate" class="form-control" placeholder="10.3" name="estimate" title="1-279" pattern="([2][0-7][0-9]|[1][0-9][0-9]|([1-9][0-9])|[1-9])" /> 
+						<div class="input-group" style="width: 275px;"><span class="input-group-addon">Niveau à atteindre</span>
+							<input type="number" id="estimate" class="form-control" placeholder="1-179" name="estimate" title="1-279" pattern="([2][0-7][0-9]|[1][0-9][0-9]|([1-9][0-9])|[1-9])" /> 
 
 						</div>
 					</div>
 					</div>
-
+					</center>
 				</form>
 				
 				
-			<br/>
-			<!-- CARTES -->
-			<br/>
-			<div id="section_laifte">
-				<img src="img/tete.png" class="section_laifte-img">
+				<br/>
+				<!-- CARTES -->
+				<br/>
+				<div id="section_laifte">
+				<img src="img/carte.png" class="section_laifte-img">
 				<span class="section_laifte-h1">Cartes</span>
-			</div>
-			<br/>
-				<form id="cartes" name="cartes" action="post">
-					<div id="bloque1">
-						<span id="cExp">Cartes d'exp :</span>
-						<div class="inputCalc">
-							<input placeholder="Carte d'exp Lv1" id="c1" name="c1" type="number" />
-						</div>
-						<div class="inputCalc">
-							<input placeholder="Carte d'exp Lv2" id="c2" name="c2" type="number" />
-						</div>
-						<div class="inputCalc">
-							<input placeholder="Carte d'exp Lv3" id="c3" name="c3" type="number" />
-						</div>
-						<div class="inputCalc">
-							<input placeholder="Carte d'exp Lv4" id="c4" name="c4" type="number" />
-						</div>
-						<div class="inputCalc">
-							<input class="btn waves-effect waves-light" value="Valider" id="bouton" type="button" onClick="calculate();calculateC();estimate();"></input>
-						</div>
-					</div>
-					<div id="bloque2">
-						<div class="inputCalc">
-							<input placeholder="Carte d'exp Lv5" id="c5" name="c5" type="number" />
-						</div>
-						<div class="inputCalc">
-							<input placeholder="Carte d'exp Lv6" id="c6" name="c6" type="number" />
-						</div>
-						<div class="inputCalc">
-							<input placeholder="Carte d'exp Lv7" id="c7" name="c7" type="number" />
-						</div>
-						<div class="inputCalc">
-							<input placeholder="Carte d'exp Lv8" id="c8" name="c8" type="number" />
-						</div>
-					</div>
-				<div id="bloque3">
-					<div class="inputCalc">
-						<input placeholder="Carte d'exp Lv9" id="c9" name="c9" type="number" />
-					</div>
-					<div class="inputCalc">
-						<input placeholder="Carte d'exp Lv10" id="c10" name="c10" type="number" />
-					</div>
-					<div class="inputCalc">
-						<input placeholder="Carte d'exp Lv11" id="c11" name="c11" type="number" />
-					</div>
-					<div class="inputCalc">
-						<input placeholder="Carte d'exp Lv12" id="c12" name="c12" type="number" />
-					</div>
 				</div>
-				
+				<br/>
+				<form id="cartes" class="form-inline" name="cartes" action="post">
+				Indiquez le nombre de cartes que vous détenez pour chaque niveau :<br/>
+					<center>
+					<div class="form-group">
+						<div class="form-group">
+							<div class="input-group" style="width: 65px;">
+								<input type="number" id="c1" class="form-control" placeholder="Lvl 1" name="c1" type="number">
+							</div>
+							<div class="input-group" style="width: 65px;">
+								<input type="number" id="c2" class="form-control" placeholder="Lvl 2" name="c2" type="number">
+							</div>
+							<div class="input-group" style="width: 65px;">
+								<input type="number" id="c3" class="form-control" placeholder="Lvl 3" name="c3" type="number">
+							</div>
+							<div class="input-group" style="width: 65px;">
+								<input type="number" id="c4" class="form-control" placeholder="Lvl 4" name="c4" type="number">
+							</div>
+							<br/>
+							<div class="input-group" style="width: 65px;">
+								<input type="number" id="c5" class="form-control" placeholder="Lvl 5" name="c5" type="number">
+							</div>
+							<div class="input-group" style="width: 65px;">
+								<input type="number" id="c6" class="form-control" placeholder="Lvl 6" name="c6" type="number">
+							</div>
+							<div class="input-group" style="width: 65px;">
+								<input type="number" id="c7" class="form-control" placeholder="Lvl 7" name="c7" type="number">
+							</div>
+							<div class="input-group" style="width: 65px;">
+								<input type="number" id="c8" class="form-control" placeholder="Lvl 8" name="c8" type="number">
+							</div>
+							<br/>
+							<div class="input-group" style="width: 65px;">
+								<input type="number" id="c9" class="form-control" placeholder="Lvl 9" name="c9" type="number">
+							</div>
+							<div class="input-group" style="width: 65px;">
+								<input type="number" id="c10" class="form-control" placeholder="Lvl 10" name="c10" type="number">
+							</div>
+							<div class="input-group" style="width: 65px;">
+								<input type="number" id="c11" class="form-control" placeholder="Lvl 11" name="c11" type="number">
+							</div>
+							<div class="input-group" style="width: 65px;">
+								<input type="number" id="c12" class="form-control" placeholder="Lvl 12" name="c12" type="number">
+							</div>
+						</div>
+					</div>
+					</center>
+					<br/>
+							<input class="btn btn-lg" style="width: 95%;" value="Valider" id="bouton" type="button" onClick="calculate();calculateC();estimate();"></input>
 			</form>
 			
 			</div>
