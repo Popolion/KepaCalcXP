@@ -22,9 +22,9 @@
 		<!-- KPC -->
 
 	</head>
-	
+
 	<body>
-	
+
 	<!-- MENU -->
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
@@ -40,8 +40,8 @@
 		</div>
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-			&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-default navbar-btn"><a onclick="translateFr()"><img src="img/fr.png" /></a></button>
-			<button type="button" class="btn btn-default navbar-btn"><a onclick="translateUs()"><img src="img/us.png" /></a></button>
+			&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-default navbar-btn" onclick="translateFr()"><img src="img/fr.png" /></button>
+			<button type="button" class="btn btn-default navbar-btn" onclick="translateUs()"><img src="img/us.png" /></button>
 				<li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Réseau Popolion<span class="caret"></span></a>
 			<ul class="dropdown-menu">
@@ -57,73 +57,75 @@
 			</ul>
 			</div>
 	</nav>
-    <!-- FIN MENU -->   
-	
+    <!-- FIN MENU -->
+
 	<div class="container">
 		<div class="row">
 			<div id="laifte">
+
 				<!-- PERSONNAGE -->
 				<div id="section_laifte">
 					<img src="img/tete.png" class="section_laifte-img">
-					<span class="section_laifte-h1">Personnage</span>
+					<span id="trad_chara" class="section_laifte-h1">Personnage</span>
 				</div>
+
 				<br/>
+
 				<form id="info" class="form-inline" action="post">
-				<center>
-					<div class="form-group">
+					<center>
 						<div class="form-group">
-					<div class="input-group" style="width: 135px;"> <span class="input-group-addon">Lvl</span>
-							<input type="number" id="level" class="form-control" placeholder="1-279" name="level" title="1-279" required="required" pattern="([2][0-7][0-9]|[1][0-9][0-9]|([1-9][0-9])|[1-9])">
+							<div class="form-group">
+								<div class="input-group" style="width: 135px;"> <span class="input-group-addon">Lvl</span>
+									<input type="number" id="level" class="form-control" placeholder="1-279" name="level" title="1-279" required="required" pattern="([2][0-7][0-9]|[1][0-9][0-9]|([1-9][0-9])|[1-9])">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="input-group" style="width: 135px;"> <span class="input-group-addon">%</span>
+									<input type="number" id="level_p" class="form-control" placeholder="10.3" title="0-100" required="required" pattern="(^(100|0|(?:\.0{1,2})?))|(?!^0*$)(?!^0*\.0*$)^\d{1,2}(\.\d{1,2})?$" />
+								</div>
+							</div>
 						</div>
-						</div>
-					<div class="form-group">
-						<div class="input-group" style="width: 135px;"> <span class="input-group-addon">%</span>
-							<input type="number" id="level_p" class="form-control" placeholder="10.3" title="0-100" required="required" pattern="(^(100|0|(?:\.0{1,2})?))|(?!^0*$)(?!^0*\.0*$)^\d{1,2}(\.\d{1,2})?$" /> 
 
-						</div>
-					</div>
-					</div>
-					<div class="form-group">
 						<div class="form-group">
-					<div class="input-group" style="width: 135px;"> <span class="input-group-addon">Classe</span>
-							<input type="number" id="levelC" class="form-control" placeholder="1-15" name="levelC" title="1-14" required="required" pattern="(([1][0-4])|[1-9])">
+							<div class="form-group">
+								<div class="input-group" style="width: 135px;"> <span id="trad_class" class="input-group-addon">Classe</span>
+									<input type="number" id="levelC" class="form-control" placeholder="1-15" name="levelC" title="1-14" required="required" pattern="(([1][0-4])|[1-9])">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="input-group" style="width: 135px;"> <span class="input-group-addon">%</span>
+									<input type="number" id="levelC_p" class="form-control" placeholder="10.3" name="levelC_p" title="0-100" required="required" pattern="(^(100|0|(?:\.0{1,2})?))|(?!^0*$)(?!^0*\.0*$)^\d{1,2}(\.\d{1,2})?$" />
+								</div>
+							</div>
 						</div>
-						</div>
-					<div class="form-group">
-						<div class="input-group" style="width: 135px;"> <span class="input-group-addon">%</span>
-							<input type="number" id="levelC_p" class="form-control" placeholder="10.3" name="levelC_p" title="0-100" required="required" pattern="(^(100|0|(?:\.0{1,2})?))|(?!^0*$)(?!^0*\.0*$)^\d{1,2}(\.\d{1,2})?$" /> 
 
-						</div>
-					</div>
-					</div>
-					<div class="form-group">
 						<div class="form-group">
-					<div class="input-group" style="width: 275px;"><span class="input-group-addon">Rank</span>
-							<input type="number" id="rank" class="form-control" placeholder="1-7" name="rank" title="1-7" required="required" pattern="([1-7])">
+							<div class="form-group">
+								<div class="input-group" style="width: 275px;"><span id="trad_rank" class="input-group-addon">Rang</span>
+									<input type="number" id="rank" class="form-control" placeholder="1-7" name="rank" title="1-7" required="required" pattern="([1-7])">
+								</div>
+							</div>
+							<br/>
+							<div class="form-group">
+								<div class="input-group" style="width: 275px;"><span id="trad_targetLvl" class="input-group-addon">Niveau à atteindre</span>
+									<input type="number" id="estimate" class="form-control" placeholder="1-179" name="estimate" title="1-279" pattern="([2][0-7][0-9]|[1][0-9][0-9]|([1-9][0-9])|[1-9])" />
+								</div>
+							</div>
 						</div>
-						</div>
-						<br/>
-					<div class="form-group">
-						<div class="input-group" style="width: 275px;"><span class="input-group-addon">Niveau à atteindre</span>
-							<input type="number" id="estimate" class="form-control" placeholder="1-179" name="estimate" title="1-279" pattern="([2][0-7][0-9]|[1][0-9][0-9]|([1-9][0-9])|[1-9])" /> 
-
-						</div>
-					</div>
-					</div>
 					</center>
 				</form>
-				
-				
+
 				<br/>
+
 				<!-- CARTES -->
 				<br/>
 				<div id="section_laifte">
 				<img src="img/carte.png" class="section_laifte-img">
-				<span class="section_laifte-h1">Cartes</span>
+				<span id="trad_cartes" class="section_laifte-h1">Cartes</span>
 				</div>
 				<br/>
 				<form id="cartes" class="form-inline" name="cartes" action="post">
-				Indiquez le nombre de cartes que vous détenez pour chaque niveau :<br/>
+				<span id="trad_txtCard">Indiquez le nombre de cartes que vous détenez pour chaque niveau :</span><br/>
 					<center>
 					<div class="form-group">
 						<div class="form-group">
@@ -171,77 +173,39 @@
 					<br/>
 							<input class="btn btn-lg" style="width: 95%;" value="Valider" id="bouton" type="button" onClick="calculate();calculateC();estimate();"></input>
 			</form>
-			
+
 			<hr/>
 			<center><p class="credits">Speedaxter (code) & BlackSheep (design) pour la communauté francophone Popolion<br/><hr/> Un bug ? Rendez-vous <a href="https://github.com/Popolion/KepaCalcXP/issues">ici</a> pour le signaler.</p><hr/></center>
 			</div>
-	</div>
-		
-			<iframe id="frmFile" src="db/table_exp.txt" onload="LoadFile();" style="display: none;"></iframe>
-			<iframe id="frmFile2" src="db/table_exp_classe.txt" onload="LoadFile2();" style="display: none;"></iframe>
-			
-			<div id="score">
-				<div id="score-top">
-					<div id="resultats" class="container">
-						<div class="row">
-							<div class="col-sm-4">
-								<span class="title-level-base">Niveau base</span><br/>
-								<span class="level-base">147</span><span class="level-base-percent">54.3%</span>
-							</div>
-							<div class="col-sm-4">
-								<span class="title-classe-base">Niveau classe</span><br/>
-								<span class="level-classe">10<span class="level-classe-percent">13.9%</span></span>
-							</div>
-							<div class="col-sm-4">
-								<span class="title-cartes">Cartes utilisées</span><br/>
-								<span class="cartes-nombre">1247</span>
-							</div>
-						</div>
-					
-					
-					
-						
-						
-					</div>
-				</div>
-				<div id="score-bottom">
-				
-				</div>
-			
-			</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			<div id="resultat">
-				<div class="card-panel teal">
-					<span class="white-text">
-						<div id="resultatChara">
-						</div>
-						<div id="resultatClass">
-						</div>
-					</span>
-				</div>
-			</div>
-			<div id="resultatE">
-				<div class="card-panel orange darken-2">
-					<span class="white-text">
-						<div id="resultatEstimate">
-						</div>
-					</span>
-				</div>
-			</div>
 		</div>
 
+		<iframe id="frmFile" src="db/table_exp.txt" onload="LoadFile();" style="display: none;"></iframe>
+		<iframe id="frmFile2" src="db/table_exp_classe.txt" onload="LoadFile2();" style="display: none;"></iframe>
+
+		<div id="score">
+			<div id="score-top">
+				<div id="resultats" class="container">
+					<div class="row">
+						<div class="col-sm-5">
+							<span id="trad_titleLvl" class="title-level-base">Niveau base</span><br/>
+							<span id="levelb" class="level-base">147</span><span id="levelb_p" class="level-base-percent">54.3%</span>
+						</div>
+						<div class="col-sm-5">
+							<span id="trad_titleClass" class="title-classe-base">Niveau classe</span><br/>
+							<span id="levelcl" class="level-classe">10</span><span id="levelcl_p" class="level-classe-percent">13.9%</span>
+						</div>
+						<div class="col-sm-2">
+							<span id="trad_titleRank" class="title-rank">Rang</span><br/>
+							<span id="rankOb" class="rank-nombre">4</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="score-bottom">
+
+			</div>
+		</div>
+	</div>
 	</body>
 
 </html>

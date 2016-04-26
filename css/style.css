@@ -207,14 +207,14 @@ width: 100%;
 	 -webkit-font-smoothing: antialiased;
 }
 
-.title-cartes {
+.title-rank {
 	display: inline-block;
 	font-size: 18px;
 	margin-left: 20px;
 	margin-top: 30px;
 }
 
-.cartes-nombre {
+.rank-nombre {
 	display: inline-block;
 	font-size: 72px;
 	font-family: Riffic;
