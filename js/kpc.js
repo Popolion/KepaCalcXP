@@ -68,7 +68,7 @@ function translateUs() {
   document.getElementById("trad_class").innerHTML = "Class"
   document.getElementById("trad_chara").innerHTML = "Character"
   document.getElementById("trad_cartes").innerHTML = "Cards"
-  document.getElementById("trad_txtCard").innerHTML = "Add the Card level in input"
+  document.getElementById("trad_txtCard").innerHTML = "Add the number of card you possess for each card level :"
   document.getElementById("bouton").value = "ACCEPT"
   document.getElementById("trad_titleLvl").innerHTML = "Level"
   document.getElementById("trad_titleClass").innerHTML = "Class level"
@@ -205,15 +205,15 @@ function estimate() {
 
         if(sessionStorage.getItem("langue") == "english") {
           if(expCard > 0) {
-            document.getElementById("score-bottom").innerHTML = "You need the level " +j+ " and " +pourcent+ "% or : <br />"
+            document.getElementById("score-bottom").innerHTML = "<br/><center>You need to be level " +j+ " at " +pourcent+ "% to use your cards and to access level&nbsp;" +lvlEstimate+", you will need :</center>"
           }
-          document.getElementById("score-bottom").innerHTML += "To reach the lvl&nbsp;" +lvlEstimate+", you will need :<br/>"+c1+ "&nbsp;card lvl 1, "+c2+"&nbsp; card lvl 2, "+c3+ "&nbsp;card lvl 3, "+c4+ "&nbsp;card lvl 4, "+c5+ "&nbsp;card lvl 5, "+c6+ "&nbsp;card lvl 6, "+c7+"&nbsp;cards 7, "+c8+ "&nbsp;card lvl 8, "+c9+ "&nbsp;card lvl 9, "+c10+ "&nbsp;card lvl 10, "+c11+ "&nbsp;card lvl 11 et "+c12+ "&nbsp;card lvl 12."
+          document.getElementById("score-bottom").innerHTML += "<br/><table class=\"table table-condensed table-striped \"><tr><th>Cards</th><th>Number</th><th>Total XP</th></tr><tr><td>Card Lv1</td><td>" +c1+ "</td><td>" +c1*500+ "</td></tr><tr><td>Card Lv2</td><td>" +c2+ "</td><td>" +c2*2686+ "</td></tr><tr><td>Card Lv3</td><td>" +c3+ "</td><td>" +c3*8442+ "</td></tr><tr><td>Card Lv4</td><td>" +c4+ "</td><td>" +c4*22860+ "</td></tr><tr><td>Card Lv5</td><td>" +c5+ "</td><td>" +c5*24571+ "</td></tr><tr><td>Card Lv6</td><td>" +c6+ "</td><td>" +c6*60312+ "</td></tr><tr><td>Card Lv7</td><td>" +c7+ "</td><td>" +c7*142150+ "</td></tr><tr><td>Card Lv8</td><td>" +c8+ "</td><td>" +c8*209334+ "</td></tr><tr><td>Card Lv9</td><td>" +c9+ "</td><td>" +c9*237943+ "</td></tr><tr><td>Card Lv10</td><td>" +c10+ "</td><td>" +c10*541023+ "</td></tr><tr><td>Card Lv11</td><td>" +c11+ "</td><td>" +c11*985061+ "</td></tr><tr><td>Card Lv12</td><td>" +c12+ "</td><td>" +c12*1344829+ "</td></tr></table>"
         }
         else {
           if(expCard > 0) {
-            document.getElementById("score-bottom").innerHTML = "Il te faudra atteindre le niveau " +j+ " &agrave; " +pourcent+ "% ou alors : <br />Pour acc&eacute;der au niveau&nbsp;" +lvlEstimate+", vous aurez besoin de :<br/>"
+            document.getElementById("score-bottom").innerHTML = "<br/><center>Tu dois être au niveau " +j+ " &agrave; " +pourcent+ "% pour utiliser des cartes et pour acc&eacute;der au niveau&nbsp;" +lvlEstimate+", tu auras besoin de :</center>"
           }
-					document.getElementById("score-bottom").innerHTML += "<table class=\"table table-resultat\"><tr><th>Cartes</th><th>Nombres</th><th>Exp total</th></tr><tr><td>Carte Exp Lv1</td><td>" +c1+ "</td><td>" +c1*500+ "</td></tr><tr><td>Carte Exp Lv2</td><td>" +c2+ "</td><td>" +c2*2686+ "</td></tr><tr><td>Carte Exp Lv3</td><td>" +c3+ "</td><td>" +c3*8442+ "</td></tr><tr><td>Carte Exp Lv4</td><td>" +c4+ "</td><td>" +c4*22860+ "</td></tr><tr><td>Carte Exp Lv5</td><td>" +c5+ "</td><td>" +c5*24571+ "</td></tr><tr><td>Carte Exp Lv6</td><td>" +c6+ "</td><td>" +c6*60312+ "</td></tr><tr><td>Carte Exp Lv7</td><td>" +c7+ "</td><td>" +c7*142150+ "</td></tr><tr><td>Carte Exp Lv8</td><td>" +c8+ "</td><td>" +c8*209334+ "</td></tr><tr><td>Carte Exp Lv9</td><td>" +c9+ "</td><td>" +c9*237943+ "</td></tr><tr><td>Carte Exp Lv10</td><td>" +c10+ "</td><td>" +c10*541023+ "</td></tr><tr><td>Carte Exp Lv11</td><td>" +c11+ "</td><td>" +c11*985061+ "</td></tr><tr><td>Carte Exp Lv12</td><td>" +c12+ "</td><td>" +c12*1344829+ "</td></tr></table>"
+					document.getElementById("score-bottom").innerHTML += "<br/><table class=\"table table-condensed table-striped \"><tr><th>Cartes</th><th>Nombres</th><th>Exp total</th></tr><tr><td>Carte Exp Lv1</td><td>" +c1+ "</td><td>" +c1*500+ "</td></tr><tr><td>Carte Exp Lv2</td><td>" +c2+ "</td><td>" +c2*2686+ "</td></tr><tr><td>Carte Exp Lv3</td><td>" +c3+ "</td><td>" +c3*8442+ "</td></tr><tr><td>Carte Exp Lv4</td><td>" +c4+ "</td><td>" +c4*22860+ "</td></tr><tr><td>Carte Exp Lv5</td><td>" +c5+ "</td><td>" +c5*24571+ "</td></tr><tr><td>Carte Exp Lv6</td><td>" +c6+ "</td><td>" +c6*60312+ "</td></tr><tr><td>Carte Exp Lv7</td><td>" +c7+ "</td><td>" +c7*142150+ "</td></tr><tr><td>Carte Exp Lv8</td><td>" +c8+ "</td><td>" +c8*209334+ "</td></tr><tr><td>Carte Exp Lv9</td><td>" +c9+ "</td><td>" +c9*237943+ "</td></tr><tr><td>Carte Exp Lv10</td><td>" +c10+ "</td><td>" +c10*541023+ "</td></tr><tr><td>Carte Exp Lv11</td><td>" +c11+ "</td><td>" +c11*985061+ "</td></tr><tr><td>Carte Exp Lv12</td><td>" +c12+ "</td><td>" +c12*1344829+ "</td></tr></table>"
         }
 
       } else {

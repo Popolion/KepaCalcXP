@@ -229,6 +229,12 @@ width: 100%;
 input[type=number] {
 	-moz-appearance: textfield;
 }
+
 @-moz-document url-prefix() {
   fieldset { display: table-cell; }
 }
+
+.msg {
+	width: 500px;
+}
+
