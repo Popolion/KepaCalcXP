@@ -1,5 +1,5 @@
 html {
-	
+
 	width: 100%;
 	height: 100%;
 }
@@ -33,14 +33,14 @@ body {
 .navbar-default .navbar-nav > li > a:focus {
     color: #fff;
 }
-.navbar-default .navbar-nav > .active > a, 
-.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
     color: #555;
     background-color: #000;
 }
-.navbar-default .navbar-nav > .open > a, 
-.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
     color: #555;
     background-color: #D5D5D5;
@@ -112,7 +112,7 @@ body {
 margin: 0 auto;
 position: relative;
 width: 100%;
-	
+
 }
 
 .credits {
@@ -227,24 +227,8 @@ width: 100%;
 
 /* Firefox */
 input[type=number] {
-	-moz-appearance: textfield; 
+	-moz-appearance: textfield;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}
