@@ -1,13 +1,12 @@
-body {
-	width : 100%;
-    margin: 0px auto;
-    text-align: center;
+body {	
+	padding-top: 70px;
 }
+
 
 #contenu {
 	margin: 0px auto;
 	margin-top : 20px;
-	width : 750px;
+	width : 100%;
 }
 
 #resultat {
@@ -30,18 +29,10 @@ body {
 	width : 750px;
 }
 
-img {
-	
-margin-top : 15px;	
-padding-bottom : 15px;
-	
-	
-}
+
 
 #resultatClass {
-	
-	text-align: left;
-	
+	text-align: left;	
 }
 
 .inputCalc {
@@ -50,7 +41,7 @@ padding-bottom : 15px;
 
 #info {
 	margin-top: -2px;
-	float:left;
+	
 }
 
 #cartes {
@@ -73,20 +64,51 @@ padding-bottom : 15px;
 	margin-top:20px;
 }
 
-table
-{
-    border-collapse: collapse;
-}
-td, th 
-{
-    border: 1px solid black;
-	text-align: center;
-}
-
-
 /* Firefox */
 input[type=number] {-moz-appearance: textfield; width:143;}
 
 /* Google Chrome */
 ::-webkit-inner-spin-button { -webkit-appearance: none;}
 ::-webkit-outer-spin-button { -webkit-appearance: none;}
+
+/* left div */
+
+#laifte {
+  width: 290px;
+  position: fixed;
+  left: 0px;
+  top: 50px;
+  border-radius: 0;
+  height: 100%;
+  border-right: 1px solid #a8a7a7;
+}
+
+
+#laifte + .container {
+  padding-left: 290px;
+}
+
+#section_laifte {
+	background-color: #ebebeb;
+	border-bottom: 1px solid #a8a7a7;
+	border-top: 1px solid #a8a7a7;
+	height: 100px;
+	width: 289px;
+}
+
+.section_laifte-h1  {
+	display: inline-block;
+	position: relative;
+	margin-left: 15px;
+	margin-top: 15px;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 24px;
+	height: 24px;
+}
+
+.section_laifte-img {
+	margin-top : 28px;
+	margin-left : 40px;
+}
+
