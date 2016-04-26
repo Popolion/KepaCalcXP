@@ -225,7 +225,10 @@ width: 100%;
 	 -webkit-font-smoothing: antialiased;
 }
 
-
+/* Firefox */
+input[type=number] {
+	-moz-appearance: textfield; 
+}
 
 
 
