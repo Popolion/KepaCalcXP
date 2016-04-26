@@ -3,12 +3,6 @@ body {
 }
 
 
-#contenu {
-	margin: 0px auto;
-	margin-top : 20px;
-	width : 100%;
-}
-
 #resultat {
 	display: none;
 	float: left;
@@ -30,13 +24,8 @@ body {
 }
 
 
-
 #resultatClass {
 	text-align: left;	
-}
-
-.inputCalc {
-	margin: 2px;
 }
 
 #info {
@@ -64,8 +53,6 @@ body {
 	margin-top:20px;
 }
 
-/* Firefox */
-input[type=number] {-moz-appearance: textfield; width:143;}
 
 /* Google Chrome */
 ::-webkit-inner-spin-button { -webkit-appearance: none;}
@@ -112,3 +99,14 @@ input[type=number] {-moz-appearance: textfield; width:143;}
 	margin-left : 40px;
 }
 
+#level {
+margin: 0 auto;
+position: relative;
+width: 100%;
+	
+}
+
+.bullet {
+
+	
+}
