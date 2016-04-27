@@ -197,7 +197,7 @@ function estimate() {
       var j = 0
       var differenceLvl = lvlBut - expCard
 
-      if(difference < differenceLvl) {
+      if(difference <= differenceLvl) {
         // Cherche le niveau obtenu
         for (var i = 1; i < 280; i++) {
           if(differenceLvl < sessionStorage.getItem(t.concat(i))) {
@@ -232,7 +232,7 @@ function estimate() {
           document.getElementById("score-bottom").innerHTML = "Congratulations ! You can use all your cards for obtains your level target !"
         }
         else {
-          document.getElementById("score-bottom").innerHTML = "Bravo ! Tu peux utiliser toutes tes cartes pour atteindre ton objectif de niveau !"
+          document.getElementById("score-bottom").innerHTML = "Bravo ! Tu peux utiliser toutes tes cartes pour atteindre ton objectif de niveau !" + difference +"<"+ differenceLvl
         }
       }
     } else {
