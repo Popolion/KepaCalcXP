@@ -340,17 +340,18 @@ function calculate(){
       pourcent = pourcent *100
       pourcent = pourcent.toFixed(2)
       var maxExp = sessionStorage.getItem(j)
+      //Affichage
+      document.getElementById("levelb").innerHTML = j
+      document.getElementById("levelb_p").innerHTML = pourcent + "%"
     } else {
-      j = 280
       expPlus = sessionStorage.getItem(279)
-      var pourcent = 100.00
-      pourcent = pourcent.toFixed(2)
       var maxExp = expPlus
+      //Affichage
+      document.getElementById("levelb").innerHTML = "MAX"
+      document.getElementById("levelb_p").innerHTML = ""
     }
 
-    //Affichage
-    document.getElementById("levelb").innerHTML = j
-    document.getElementById("levelb_p").innerHTML = pourcent + "%"
+
 
   } else {
     if(sessionStorage.getItem("langue") == "english") {
@@ -468,18 +469,21 @@ function calculateC() {
       pourcent = pourcent *100
       pourcent = pourcent.toFixed(2)
       var maxExp = sessionStorage.getItem(rankObtenu + "_" + lvlClasse)
+      // Affichage
+      document.getElementById("levelcl").innerHTML = lvlClasse
+      document.getElementById("levelcl_p").innerHTML = pourcent + "%"
     } else {
       rankObtenu = 7
       lvlClasse = 15
       expPlus = sessionStorage.getItem("7_14")
       var pourcent = 100.00
       pourcent = pourcent.toFixed(2)
-      var maxExp = expPlus
+      var maxExp = expPlus// Affichage
+      document.getElementById("levelcl").innerHTML = "MAX"
+      document.getElementById("levelcl_p").innerHTML = ""
     }
 
-    // Affichage
-    document.getElementById("levelcl").innerHTML = lvlClasse
-    document.getElementById("levelcl_p").innerHTML = pourcent + "%"
+
     document.getElementById("rankOb").innerHTML = rankObtenu
   }
 }
