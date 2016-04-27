@@ -232,7 +232,7 @@ function estimate() {
           document.getElementById("score-bottom").innerHTML = "Congratulations ! You can use all your cards for obtains your level target !"
         }
         else {
-          document.getElementById("score-bottom").innerHTML = "Bravo ! Tu peux utiliser toutes tes cartes pour atteindre ton objectif de niveau !" + difference +"<"+ differenceLvl
+          document.getElementById("score-bottom").innerHTML = "Bravo ! Tu peux utiliser toutes tes cartes pour atteindre ton objectif de niveau !"
         }
       }
     } else {
@@ -248,7 +248,7 @@ function calculate(){
    && document.getElementById('levelC').checkValidity() && document.getElementById('levelC_p').checkValidity()
    && document.getElementById('rank').checkValidity()) {
 
-    document.getElementById("resultats").style.display = "inline"
+    document.getElementById("resultats").style.display = "inline-block"
     document.getElementById("intro").style.display = "none"
     // Ajout de valeur
     level = parseFloat(document.getElementById("level").value)
