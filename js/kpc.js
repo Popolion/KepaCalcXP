@@ -67,7 +67,7 @@ function translateFr() {
   document.getElementById("trad_titleClass").innerHTML = "Niveau classe"
   document.getElementById("trad_titleRank").innerHTML = "Rang"
   document.getElementById("trad_targetLvl").innerHTML = "Niveau à atteindre"
-  document.getElementById("thx").innerHTML = "&nbsp;Merci de remplir les champs à gauche afin de générer les informations."
+  document.getElementById("thx").innerHTML = "<br/>Merci de remplir les champs à gauche afin de générer les informations."
   sessionStorage.setItem("langue","francais")
 }
 
