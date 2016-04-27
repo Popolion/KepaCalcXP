@@ -50,9 +50,9 @@ function LoadFile2() {
 }
 
 function loadImg() {
-  var imgArray = ["img/catpizza1.png", "img/catpizza2.png", "img/catpizza3.png"];
+  var imgArray = ["img/npc1.png", "img/npc2.png", "img/npc3.png", "img/npc4.png", "img/npc5.png", "img/npc6.png", "img/npc7.png", "img/npc8.png"];
 
-  var nb = Math.floor(Math.random() *3);
+  var nb = Math.floor(Math.random() *8);
   document.getElementById("imgRand").src = imgArray[nb];
 }
 
