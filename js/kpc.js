@@ -67,6 +67,7 @@ function translateFr() {
   document.getElementById("trad_titleClass").innerHTML = "Niveau classe"
   document.getElementById("trad_titleRank").innerHTML = "Rang"
   document.getElementById("trad_targetLvl").innerHTML = "Niveau à atteindre"
+  document.getElementById("thx").innerHTML = "Merci de remplir les champs à gauche"
   sessionStorage.setItem("langue","francais")
 }
 
@@ -81,6 +82,7 @@ function translateUs() {
   document.getElementById("trad_titleClass").innerHTML = "Class level"
   document.getElementById("trad_titleRank").innerHTML = "Rank"
   document.getElementById("trad_targetLvl").innerHTML = "Level target"
+  document.getElementById("thx").innerHTML = "Thx for subscribe"
   sessionStorage.setItem("langue","english")
 }
 
