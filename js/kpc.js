@@ -78,7 +78,7 @@ function translateUs() {
   document.getElementById("trad_cartes").innerHTML = "Cards"
   document.getElementById("trad_txtCard").innerHTML = "Add the number of card you possess for each card level :"
   document.getElementById("bouton").value = "ACCEPT"
-  document.getElementById("trad_titleLvl").innerHTML = "Level"
+  document.getElementById("trad_titleLvl").innerHTML = "Reached level"
   document.getElementById("trad_titleClass").innerHTML = "Class level"
   document.getElementById("trad_titleRank").innerHTML = "Rank"
   document.getElementById("trad_targetLvl").innerHTML = "Level target"
