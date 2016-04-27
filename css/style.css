@@ -145,6 +145,7 @@ width: 100%;
 
 #resultats {
 	width: 100%;
+	display: none;
 }
 
 .title-level-base {

@@ -246,6 +246,8 @@ function calculate(){
    && document.getElementById('levelC').checkValidity() && document.getElementById('levelC_p').checkValidity()
    && document.getElementById('rank').checkValidity()) {
 
+    document.getElementById("resultats").style.display = "inline"
+    document.getElementById("intro").style.display = "none"
     // Ajout de valeur
     level = parseFloat(document.getElementById("level").value)
     level_p = parseFloat(document.getElementById("level_p").value)
