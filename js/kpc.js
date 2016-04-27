@@ -49,6 +49,13 @@ function LoadFile2() {
   }
 }
 
+function loadImg() {
+  var imgArray = ["img/catpizza1.png", "img/catpizza2.png", "img/catpizza3.png"];
+
+  var nb = Math.floor(Math.random() *3);
+  document.getElementById("imgRand").src = imgArray[nb];
+}
+
 function translateFr() {
   document.getElementById("trad_rank").innerHTML = "Rang"
   document.getElementById("trad_class").innerHTML = "Classe"
