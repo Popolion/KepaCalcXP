@@ -220,7 +220,7 @@ function estimate() {
         }
         else {
           if(expCard > 0) {
-            document.getElementById("score-bottom").innerHTML = "<br/><center>Tu dois être au niveau " +j+ " &agrave; " +pourcent+ "% pour utiliser des cartes et pour acc&eacute;der au niveau&nbsp;" +lvlEstimate+", tu auras besoin de :</center>"
+            document.getElementById("score-bottom").innerHTML = "<br/><center>Pour atteindre le niveau " +lvlEstimate+ ", tu dois monter " +j+ " &agrave; " +pourcent+ "%, puis utiliser tes cartes ou alors obtenir soit :</center>"
           }
 					document.getElementById("score-bottom").innerHTML += "<br/><table class=\"table table-condensed table-striped \"><tr><th>Cartes</th><th>Nombres</th><th>Exp total</th></tr><tr><td>Carte Exp Lv1</td><td>" +c1+ "</td><td>" +c1*500+ "</td></tr><tr><td>Carte Exp Lv2</td><td>" +c2+ "</td><td>" +c2*2686+ "</td></tr><tr><td>Carte Exp Lv3</td><td>" +c3+ "</td><td>" +c3*8442+ "</td></tr><tr><td>Carte Exp Lv4</td><td>" +c4+ "</td><td>" +c4*22860+ "</td></tr><tr><td>Carte Exp Lv5</td><td>" +c5+ "</td><td>" +c5*24571+ "</td></tr><tr><td>Carte Exp Lv6</td><td>" +c6+ "</td><td>" +c6*60312+ "</td></tr><tr><td>Carte Exp Lv7</td><td>" +c7+ "</td><td>" +c7*142150+ "</td></tr><tr><td>Carte Exp Lv8</td><td>" +c8+ "</td><td>" +c8*209334+ "</td></tr><tr><td>Carte Exp Lv9</td><td>" +c9+ "</td><td>" +c9*237943+ "</td></tr><tr><td>Carte Exp Lv10</td><td>" +c10+ "</td><td>" +c10*541023+ "</td></tr><tr><td>Carte Exp Lv11</td><td>" +c11+ "</td><td>" +c11*985061+ "</td></tr><tr><td>Carte Exp Lv12</td><td>" +c12+ "</td><td>" +c12*1344829+ "</td></tr></table>"
         }
